@@ -6,6 +6,7 @@ on:
     paths: ['python/**', 'contracts/**', '.github/workflows/ci-python.yml']
   pull_request:
     paths: ['python/**', 'contracts/**', '.github/workflows/ci-python.yml']
+  workflow_dispatch:
 
 permissions:
   contents: read

@@ -6,6 +6,7 @@ on:
     paths: ['evm/**', '.github/workflows/ci-evm.yml']
   pull_request:
     paths: ['evm/**', '.github/workflows/ci-evm.yml']
+  workflow_dispatch:
 
 permissions:
   contents: read
