@@ -71,3 +71,19 @@ class TestWeb3ClientAttestedRegistration:
             await client.register_agent_attested(
                 "did:agent:test:1", "did:ethr:0xabc", "", RegistrationAttestation("0x01", 1, b"")
             )
+
+# Moved from agent-did-sdk tests/test_security_edge_cases.py.
+class TestWeb3ClientInvalidShape:
+    async def test_invalid_response_raises(self) -> None:
+        class FakeContract:
+            class functions:
+                @staticmethod
+                def getAgentRecord(did: str):  # noqa: N802
+                    class CallableResult:
+                        def call(self):
+                            return 42
+                    return CallableResult()
+
+        client = Web3AgentRegistryContractClient(FakeContract())
+        with pytest.raises(ValueError, match="Invalid contract response"):
+            await client.get_agent_record("did:agent:test:1")
