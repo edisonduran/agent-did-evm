@@ -6,6 +6,7 @@
   "description": "Hardhat workspace for Agent-DID contracts",
   "scripts": {
     "build": "hardhat compile",
+    "test": "hardhat test",
     "node:local": "hardhat node",
     "deploy:local": "hardhat run scripts/deploy-agent-registry.js --network localhost",
     "deploy:sepolia": "hardhat run scripts/deploy-agent-registry.js --network sepolia",

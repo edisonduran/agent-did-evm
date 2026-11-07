@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ethers } = require('ethers');
-const { AgentIdentity, LocalKeySigner } = require('../../sdk/dist/index.js');
+const { AgentIdentity, LocalKeySigner } = require('@agentdid/sdk');
 const {
   EvmAgentRegistry,
   EthersAgentRegistryContractClient,

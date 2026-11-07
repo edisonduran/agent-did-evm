@@ -2,7 +2,7 @@
 
 The registrar signs these with its own wallet (for example ``eth_account``'s
 ``encode_typed_data`` + ``sign_message``) after verifying, off-chain, that ``owner`` controls
-the DID. TypeScript parity: ``evm/src/attestation.ts``.
+the DID. TypeScript parity: ``evm/src/attestation.ts`` in this repository.
 """
 
 from __future__ import annotations

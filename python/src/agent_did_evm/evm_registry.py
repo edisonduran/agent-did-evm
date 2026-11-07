@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from ..registry.types import AgentRegistryRecord
+from agent_did_sdk.registry.types import AgentRegistryRecord
+
 from .evm_types import EvmAgentRegistryAdapterConfig, EvmTxResponse, RegistrationAttestationRequest
 
 

@@ -1,6 +1,6 @@
 # @agentdid/evm
 
-Optional EVM registry adapter for [Agent-DID](https://github.com/edisonduran/agent-did). The core `@agentdid/sdk` does not depend on it (or on `ethers`); the EVM profile stays deferred outside core 1.0 (see `docs/RFC-001-EVM-Profile.md`).
+Optional EVM registry adapter for [Agent-DID](https://github.com/edisonduran/agent-did). The core `@agentdid/sdk` does not depend on it (or on `ethers`); the EVM profile stays deferred outside core 1.0 (see [`docs/RFC-001-EVM-Profile.md`](../docs/RFC-001-EVM-Profile.md)).
 
 ```bash
 npm install @agentdid/evm @agentdid/sdk ethers

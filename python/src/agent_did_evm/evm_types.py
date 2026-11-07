@@ -6,7 +6,7 @@ from collections.abc import Awaitable, Callable
 from dataclasses import dataclass
 from typing import Protocol, runtime_checkable
 
-from ..registry.types import AgentRegistryRecord
+from agent_did_sdk.registry.types import AgentRegistryRecord
 
 
 @dataclass

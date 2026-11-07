@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.env
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+contracts/reports/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

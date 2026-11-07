@@ -21,7 +21,7 @@ from agent_did_sdk.resolver.in_memory import InMemoryDIDResolver
 
 ROOT = Path(__file__).resolve().parents[2]
 CONTRACTS_DIR = ROOT / "contracts"
-SDK_PYTHON_DIR = ROOT / "sdk-python"
+PYTHON_DIR = ROOT / "python"
 CONTRACT_ARTIFACT_PATH = CONTRACTS_DIR / "artifacts" / "src" / "AgentRegistry.sol" / "AgentRegistry.json"
 NPM_COMMAND = "npm.cmd" if os.name == "nt" else "npm"
 JSON_CONTENT_TYPE = "application/json"

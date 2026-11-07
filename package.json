@@ -1,0 +1,11 @@
+{
+  "name": "agent-did-evm-workspace",
+  "private": true,
+  "description": "Optional EVM profile of Agent-DID: AgentRegistry contract, @agentdid/evm (TypeScript) and agent-did-evm (Python).",
+  "license": "Apache-2.0",
+  "scripts": {
+    "smoke:e2e": "node scripts/e2e-smoke.js",
+    "smoke:policy": "node scripts/revocation-policy-smoke.js",
+    "audit:contracts": "node scripts/contract-audit.js"
+  }
+}

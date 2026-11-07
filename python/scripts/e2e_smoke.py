@@ -3,6 +3,9 @@ from __future__ import annotations
 import asyncio
 import sys
 
+from agent_did_sdk import AgentIdentity, AgentIdentityConfig, LocalKeySigner
+from agent_did_sdk.core.types import CreateAgentParams
+from agent_did_sdk.resolver.in_memory import InMemoryDIDResolver
 from eth_account import Account
 from eth_account.messages import encode_typed_data
 from smoke_utils import (
@@ -18,21 +21,18 @@ from smoke_utils import (
 )
 from web3 import HTTPProvider, Web3
 
-from agent_did_sdk import AgentIdentity, AgentIdentityConfig, LocalKeySigner
-from agent_did_sdk.core.types import CreateAgentParams
-from agent_did_sdk.evm import (
+from agent_did_evm import (
     REGISTRATION_ATTESTATION_TYPES,
     registration_attestation_domain,
     registration_attestation_message,
 )
-from agent_did_sdk.evm.evm_registry import EvmAgentRegistry
-from agent_did_sdk.evm.evm_types import (
+from agent_did_evm.evm_registry import EvmAgentRegistry
+from agent_did_evm.evm_types import (
     EvmAgentRegistryAdapterConfig,
     RegistrationAttestation,
     RegistrationAttestationRequest,
 )
-from agent_did_sdk.evm.web3_client import Web3AgentRegistryContractClient
-from agent_did_sdk.resolver.in_memory import InMemoryDIDResolver
+from agent_did_evm.web3_client import Web3AgentRegistryContractClient
 
 # Well-known Hardhat development account #0 (the deployer, hence the initial registrar).
 HARDHAT_ACCOUNT_0_KEY = "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"

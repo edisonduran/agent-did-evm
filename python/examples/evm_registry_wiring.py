@@ -5,13 +5,13 @@ import json
 import os
 from pathlib import Path
 
+from agent_did_sdk import AgentIdentity, AgentIdentityConfig, LocalKeySigner
+from agent_did_sdk.core.types import CreateAgentParams
 from eth_account import Account
 from eth_account.messages import encode_typed_data
 from web3 import HTTPProvider, Web3
 
-from agent_did_sdk import AgentIdentity, AgentIdentityConfig, LocalKeySigner
-from agent_did_sdk.core.types import CreateAgentParams
-from agent_did_sdk.evm import (
+from agent_did_evm import (
     REGISTRATION_ATTESTATION_TYPES,
     EvmAgentRegistry,
     EvmAgentRegistryAdapterConfig,

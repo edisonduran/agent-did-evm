@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from agent_did_sdk.evm.web3_client import Web3AgentRegistryContractClient
+from agent_did_evm.web3_client import Web3AgentRegistryContractClient
 
 
 class FakeContractFunctions:
@@ -44,7 +44,7 @@ class TestWeb3Client:
 
 class TestWeb3ClientAttestedRegistration:
     async def test_passes_attestation_as_tuple(self) -> None:
-        from agent_did_sdk.evm.evm_types import RegistrationAttestation
+        from agent_did_evm.evm_types import RegistrationAttestation
 
         calls: list[tuple[object, ...]] = []
 
@@ -64,7 +64,7 @@ class TestWeb3ClientAttestedRegistration:
         assert calls == [("did:agent:test:1", "did:ethr:0xabc", "", ("0x01", 7, b"\x02" * 65))]
 
     async def test_missing_method_raises(self) -> None:
-        from agent_did_sdk.evm.evm_types import RegistrationAttestation
+        from agent_did_evm.evm_types import RegistrationAttestation
 
         client = Web3AgentRegistryContractClient(type("Obj", (), {"functions": object()})())
         with pytest.raises(RuntimeError, match="registerAgentAttested"):

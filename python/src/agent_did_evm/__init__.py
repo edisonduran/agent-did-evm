@@ -1,6 +1,7 @@
-"""Optional EVM registry adapter (install with ``pip install "agent-did-sdk[evm]"``).
+"""Optional EVM registry adapter for Agent-DID (``pip install agent-did-evm``).
 
-Nothing in the core SDK imports this package.
+The core ``agent-did-sdk`` does not depend on this package. Until ``1.0.0rc5`` it shipped inside the core SDK
+as ``agent_did_sdk.evm``.
 """
 
 from __future__ import annotations

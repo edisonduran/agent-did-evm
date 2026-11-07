@@ -4,9 +4,7 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const CONTRACTS_DIR = path.join(ROOT, 'contracts');
-const SDK_DIR = path.join(ROOT, 'sdk');
 const EVM_DIR = path.join(ROOT, 'evm');
-const SDK_DIST = path.join(SDK_DIR, 'dist');
 const VERBOSE_SMOKE = process.env.VERBOSE_SMOKE === '1';
 const NPM_COMMAND = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 
@@ -166,9 +164,7 @@ function smokeEnv(extraVars = {}) {
 module.exports = {
   ROOT,
   CONTRACTS_DIR,
-  SDK_DIR,
   EVM_DIR,
-  SDK_DIST,
   VERBOSE_SMOKE,
   NPM_COMMAND,
   run,

@@ -12,7 +12,7 @@ npm install
 cp .env.example .env
 ```
 
-Smoke test end-to-end (desde la raíz del repo):
+Smoke test end-to-end (from the repository root):
 
 ```bash
 npm run smoke:e2e

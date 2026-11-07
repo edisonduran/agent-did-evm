@@ -13,8 +13,8 @@
   "keywords": ["did", "agent", "evm", "registry", "agent-did"],
   "author": "Edison Munoz <edison.munoz@agent-did.org>",
   "license": "Apache-2.0",
-  "repository": { "type": "git", "url": "https://github.com/edisonduran/agent-did.git", "directory": "evm" },
-  "homepage": "https://github.com/edisonduran/agent-did#readme",
+  "repository": { "type": "git", "url": "https://github.com/edisonduran/agent-did-evm.git", "directory": "evm" },
+  "homepage": "https://github.com/edisonduran/agent-did-evm#readme",
   "publishConfig": { "access": "public" },
   "engines": { "node": ">=22.12.0" },
   "peerDependencies": {

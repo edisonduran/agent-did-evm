@@ -4,8 +4,9 @@ from __future__ import annotations
 
 from typing import Any
 
-from ..core.time_utils import normalize_timestamp_to_iso
-from ..registry.types import AgentRegistryRecord
+from agent_did_sdk.core.time_utils import normalize_timestamp_to_iso
+from agent_did_sdk.registry.types import AgentRegistryRecord
+
 from .evm_types import EvmTxResponse, RegistrationAttestation
 
 
