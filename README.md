@@ -9,7 +9,7 @@ The optional, **deferred** EVM profile of [Agent-DID](https://github.com/edisond
 | `python/` | Python adapter `EvmAgentRegistry` + web3.py contract client | PyPI `agent-did-evm` |
 | `docs/RFC-001-EVM-Profile.md` | The profile and its status | |
 
-**Status.** The EVM profile is not part of the core Agent-DID `1.0` release: the core SDKs (`@agentdid/sdk`, `agent-did-sdk`) do not depend on it, and `did:webvh` is the canonical method. This code lived in the main repository until `1.0.0-rc.5` and was moved here with its history; see the ADR in the main repository (`docs/ADR-003-EVM-Profile-Satellite.md`).
+**Status.** The EVM profile is not part of the core Agent-DID `1.0` release: the core SDKs (`@agentdid/sdk`, `agent-did-sdk`) do not depend on it, and `did:webvh` is the canonical method. This code lived in the main repository until `1.0.0-rc.5` and was moved here with its history; see the ADR in the main repository (`docs/ADR-004-EVM-Profile-Satellite.md`).
 
 ## Development
 
